@@ -1,0 +1,33 @@
+html {
+  background-image: url("fondo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  box-sizing: border-box;
+}
+header h1 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  opacity: 0.6;
+  margin: 0;
+  font-size: 120px;
+}
+.blanco,
+.blanco-t {
+  color: white;
+}
+.rojo {
+  color: red;
+}
+.blanco-t {
+  opacity: 0.6;
+}
+h3 {
+  color: white;
+}
