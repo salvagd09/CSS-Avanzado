@@ -16,7 +16,6 @@ body {
   box-sizing: border-box;
 }
 header {
-  /*El profesor quiere que pongamos bordes para comprobar como se encuentra cada contenedor*/
   border-bottom: 3px solid black;
 }
 header h1 {
@@ -31,7 +30,7 @@ header h1 {
 }
 .blanco,
 .blanco-t {
-  color: white;
+  color: rgb(255, 255, 255);
   letter-spacing: 3px;
 }
 .rojo {
@@ -40,19 +39,91 @@ header h1 {
 .blanco-t {
   opacity: 0.7;
 }
-h2,
-h3 {
+
+/* 🎯 Estilos personalizados para cada título y subtítulo */
+
+/* ---- IZQUIERDA ---- */
+.plano1 {
   font-family: "Roboto Condensed";
   font-weight: 900;
+  font-size: 45px;
   text-shadow: 3px 3px 0 black;
+  color: rgb(245, 85, 37);
 }
-h2 {
+.subtitulo1 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(255, 255, 251);
+  text-shadow: 2px 2px 0 black;
+}
+
+.plano2 {
+  font-family: "Roboto Condensed";
+  font-weight: 900;
+  font-size: 45px;
+  text-shadow: 3px 3px 0 black;
+  color: rgb(255, 255, 255);
+}
+.subtitulo2 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 0 black;
+}
+
+.plano3 {
+  font-family: "Roboto Condensed";
+  font-weight: 900;
+  font-size: 30px;
+  text-shadow: 3px 3px 0 black;
+  color: rgb(160, 158, 154);
+}
+.subtitulo3 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 0 black;
+}
+
+/* ---- DERECHA ---- */
+.plano4 {
+  font-family: "Roboto Condensed";
+  font-weight: 900;
+  font-size: 45px;
+  text-shadow: 3px 3px 0 black;
+  color: rgb(255, 255, 255);
+  text-align: right;
+}
+.subtitulo4 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 0 black;
+  text-align: right;
+}
+
+.plano5 {
+  font-family: "Roboto Condensed";
+  font-weight: 900;
   font-size: 35px;
+  text-shadow: 3px 3px 0 black;
+   color: rgb(245, 85, 37);
+   text-align: right;
 }
-h3 {
-  color: white;
+.subtitulo5 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
   font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 0 black;
+  text-align: right;
 }
+
+/* ---- Contenedores ---- */
 .articulos-izquierda,
 .articulos-derecha {
   border: 5px solid black;
@@ -70,18 +141,22 @@ h3 {
   width: 25%;
 }
 .articulos-derecha {
-  margin: 20px 20px 10px 0;
+  margin: 40px 20px 30px 0; 
 }
-/*Cuando la pantall se achique*/
+.articulos-derecha:first-child {
+  margin: 60px 20px 10px 0;
+}
+.articulos-derecha:last-child {
+  margin: 20px 20px 50px 0; 
+}
+
+/* ---- Responsive ---- */
 @media (max-width: 1017px) {
   .seccion-izquierda,
   .seccion-derecha {
     width: 35%;
   }
-  h2 {
-    font-size: 25px;
-  }
-  h3 {
-    font-size: 20px;
+  .articulos-derecha {
+    margin: 20px 10px 15px 0;
   }
 }
